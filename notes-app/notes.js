@@ -10,6 +10,8 @@ const addNote = (title, body) => {
     const notes = loadNotes()
     const note = notes.find(note => note.title === title)
 
+    debugger
+    
     if (!note) {
         notes.push({
             title: title,
